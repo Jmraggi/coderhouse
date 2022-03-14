@@ -55,7 +55,7 @@ nav{
     padding: 0px;
     padding-top: 0px;
     height: 80px;
-    background: rgba(0, 83, 223);
+    background-color: #0077B6;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
@@ -65,9 +65,7 @@ nav{
 }
 
 #marca h1{
-    line-height: 70px;
-    font-size: 2rem;
-    margin: 0px;
+display:none;
     
 }
 
@@ -77,18 +75,20 @@ nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
 .lista li{
-    font-size: 1rem;
+    font-size: 2vw;
     list-style: none;
+    animation: flipInX; 
+    animation-duration: 3s; 
 }
+
 
 .lista li a {
     text-decoration: none;
     color: white;
-    padding-left: 10px;
+    padding-left: 5vw;
 }
 
 .reservado {
@@ -120,25 +120,27 @@ nav{
 
 #titulo{
     text-align: center;
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding: 150px;
 }
 
 #titulo h2{
-    font-size: 75px;
+    font-size: 4.5vw;
     display: flex;
     margin: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight:bold;
-    color: white
-
+    color: rgba(255, 255, 255, 0.575);
+    animation: bounceIn; 
+    animation-duration: 3s; 
 }
 
 #titulo h3{
-    font-size: 35px;
+    font-size: 2vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight:bold;
-    color: white
+    color: rgba(255, 255, 255, 0.459);
+    animation: bounceIn; 
+    animation-duration: 3s; 
 }
 
 .piedepagina{
