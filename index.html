@@ -7,64 +7,77 @@
     <title>Inicio | TravelTech</title>
     <link rel="shortcut icon" href="../imagenes/LOGO1.png">
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
-    <div id="conteiner">
-        <header id="header">
-            <nav>
-                    <div id="marca">
-                        <img src="imagenes/logo.png" width="90" height="80">
-                        <h1>TravelTech</h1>
-                        <!--<span class="slogan">Consejos de viajes</span> -->
-                    </div>
-                    <ul class="lista">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="paginas/imagenes.html">Imagenes</a></li>
-                        <li><a href="paginas/nosotros.html">Nosotros</a></li>
-                        <li><a href="paginas/servicios.html">Servicios</a></li>
-                        <li><a href="paginas/contacto.html">Contacto</a></li>
-                    </ul>
-                    <div class="reservado">
-                        <p>reservado</p>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a class="navbar-brand" href="#">TravelTech</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="paginas/imagenes.html">Imagenes</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="paginas/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="paginas/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
                 </div>
             </nav>
         </header>
-        <!-- main -->
-        <section id="title">
-            <div id="fondo">
-                    <div class="opaco">
-                            <div id= "titulo">
-                                <h2>La mejor experiencia en tus viajes?</h2>
-                                <br>
-                                <h3>No dudes en consultarnos</h3>
-                            </div>
-                    </div>
-            </div>
-                <div id="cards">
-                        <div class="imagenes2" style="background-image: url(../imagenes/promo1.jpg)">
-                            <div>
-                                <h2>Mar del plata</h2>
-                                <p>lorem ipsum dolor sit</p>
-                            </div>
-                        </div>
-                        <div class="imagenes2" style="background-image: url(../imagenes/promo2.jpg)">
-                            <div>
-                                <h2>Rosario</h2>
-                                <p>lorem ipsum dolor sit</p>
-                            </div>
-                        </div>
-                        <div class="imagenes2" style="background-image: url(../imagenes/promo3.jpg)">
-                            <div>
-                                <h2>Mendoza</h2>
-                                <p>lorem ipsum dolor sit</p>
-                            </div>
-                        </div>
-            </div>
-        </section>
+
+      <div id="hero" class="jumbotron text-center" style="background-image: url(../imagenes/imagenes1.jpg)" >
+        <h2>La mejor experiencia en tus viajes?</h2>
+        <br>
+        <h3>No dudes en consultarnos</h3>
+      </div>
         
+    <div class="row">
+        <div class="col-4">
+            <div id="img">
+                <h2>Mar del plata</h2>
+                <p>lorem ipsum dolor sit</p>           
+                <img src="../imagenes/promo1.jpg" class="rounded-circle" alt="Chania" width="304" height="236"> 
+            </div>
+        </div>
+        <div class="col-4">
+            <div id="img">
+                <h2>Mar del plata</h2>
+                <p>lorem ipsum dolor sit</p>           
+                <img src="../imagenes/promo1.jpg" class="rounded-circle" alt="Chania" width="304" height="236"> 
+            </div>
+        </div>
+        <div class="col-4">
+            <div id="img">
+                <h2>Mar del plata</h2>
+                <p>lorem ipsum dolor sit</p>           
+                <img src="../imagenes/promo1.jpg" class="rounded-circle" alt="Chania" width="304" height="236"> 
+            </div>
+        </div>
+      </div>
+    </div>
+
         <footer>
             <p class="piedepagina">Copyright © 2000-2022 TravelTech All Rights Reserved.</p>
         </footer>

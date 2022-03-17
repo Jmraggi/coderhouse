@@ -1,154 +1,37 @@
-#conteiner{
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-areas: 
-    ". navbar ."
-    ". title ."
-    ". footer ."
-    ;
-    position: relative;
-}
+/* FIN General */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
-    font-size: 16px;
-}
 
 .opaco {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.opaco2 {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-
-
-
-/* FIN General */
-
 /* ===============================================================================================================*/
 
 /* INICIO Index */
-
-header{
-    grid-area: navbar;
-}
-
-#title {
-    grid-area: title;
-}
-
-footer {
-    grid-area: footer;
-    display: flex;
-    margin: 0px;
-    padding: 0px;
+#hero{
+    height: 100vh;
     text-align: center;
-    justify-content: center;
+    padding: 25vh;
 }
 
-nav{
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    padding-top: 0px;
-    height: 80px;
-    background-color: #0077B6;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-#marca{
-    display: flex;
-}
-
-#marca h1{
-display:none;
-    
-}
-
-.lista {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.lista li{
-    font-size: 2vw;
-    list-style: none;
-    animation: flipInX; 
-    animation-duration: 3s; 
-}
-
-
-.lista li a {
-    text-decoration: none;
-    color: white;
-    padding-left: 5vw;
-}
-
-.reservado {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    color:rgba(0, 0, 0, 0);
-}
-
-#fondo {
-    background-image: url(imagenes/imagenes1.jpg);
-    background-position: center;
-}
-
-#cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.imagenes2{
-    text-align: center;
-    background-repeat: none;
-    background-position: center;
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-}
-
-#titulo{
-    text-align: center;
-    padding: 150px;
-}
-
-#titulo h2{
+#hero h2{
     font-size: 4.5vw;
     display: flex;
     margin: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight:bold;
-    color: rgba(255, 255, 255, 0.575);
-    animation: bounceIn; 
-    animation-duration: 3s; 
+    color: white
+
 }
 
-#titulo h3{
+#hero h3{
     font-size: 2vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight:bold;
-    color: rgba(255, 255, 255, 0.459);
-    animation: bounceIn; 
-    animation-duration: 3s; 
+    color: white
 }
 
-.piedepagina{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 
-}
 
 /* FIN Index */
 
@@ -156,41 +39,23 @@ display:none;
 
 /* INICIO Imagenes */
 
-.pic{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+#pic{
 }
 
-.imagenes{
-    text-align: center;
-    background-repeat: none;
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    margin: 15px;
-}
-
-.imagenes div{
-    vertical-align: middle;
-    display:table-cell;
-    height: 300px;
-    width: 383px;
-
-}
-
-.opaco h2{
+#pic h3{
+    font-size: 4.5vw;
     margin: 0px;
-    font-size: 35px;
-    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold;
+    color: rgb(255, 255, 255)
+
 }
 
-.opaco p{
-    margin: 8px;
-    font-size: 18px;
-    color: white;
+#pic p{
+    font-size: 2vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold;
+    color: rgb(255, 255, 255)
 }
 
 /* FIN imagenes */
@@ -198,107 +63,15 @@ display:none;
 /* ===============================================================================================================*/
 
 /* INICIO Nosotros */
-
-.caja{
-    display: flex;
-    margin: 10px auto;
-    overflow: auto;
-
+#row {
+    padding-top: 100px;
 }
-
-.caja img{
-    float: left;
-    margin: 0px 30px;
-}
-
-.caja h2{
-    font-size: 78px;
-}
-
-.caja p{
-    font-size: 40px;
-}
-
-.caja2{
-    margin: 10px auto;
-    overflow: auto;
-
-}
-
-.caja2 img{
-    float: right;
-    margin: 0px 30px;
-}
-
-.caja2 h2{
-    font-size: 78px;
-}
-
-.caja2 p{
-    font-size: 40px;
-}
-
-.caja3{
-    margin: 10px auto;
-    overflow: auto;
-
-}
-
-.caja3 h2{
-    font-size: 78px;
-    text-align: center;
-}
-
-.caja3 p{
-    font-size: 40px;
-}
-
 /* FIN Nosotros */
 
 /* ===============================================================================================================*/
 
 /* INICIO Servicios */
 
-.introduccion {
-    text-align: center;
-}
-
-.introduccion h2{
-    font-size: 50px;
-}
-
-.introduccion p{
-    font-size: 24px;
-}
-
-.figuras{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-.servicios {
-    float: left;
-    text-align: center;
-
-}
-
-.servicios img{
-    height: 180px;
-    width: 180px;
-}
-
-.servicios h2{
-    text-align: center;
-    font-size: 30px;
-    margin: 0px;
-}
-
-.servicios p{
-    text-align: center;
-    font-size: 15px;
-}
 
 /* FIN Servicios */
 
@@ -306,215 +79,7 @@ display:none;
 
 /* INICIO Contacto */
 
-.mapa {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    padding-top: 15px;
-}
-
-.formulario {
-    padding-top: 30px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
-}
-
-input {
-    float: left;
-    width: 32%;
-    height: 20px;
-    padding: 15px 8px;
-    border: 3px solid #555;
-    margin-right: 10px;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-    font-size: 15px;
-}
-
-textarea{
-    width: 100%;
-    height: 100px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
-    font-size: 20px;
-}
-
-.boton{
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    font-size: 30px;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    float: right;
 }
 
 
 
-/* <Media Queries> */
-
-
-@media screen and (max-width:768px){
-
-    /* <index> */
-
-    #conteiner{
-        grid-template-columns: 1% 98% 1%;
-    }
-      
-    #marca h1{
-        line-height: 15px;
-        font-size: 12vw;
-        display:none;
-    }
-    
-    .lista li a {
-        padding-left: 10px;
-    }
-
-    #titulo h2{
-        font-size: 16vw;
-    }
-    
-    #titulo h3{
-        font-size: 10vw;
-    }
-    
-    /* <Galeria> */
-
-    .pic{
-        flex-direction: column;
-    }
-    
-    .imagenes{
-        text-align: center;
-        width: 200px;
-        height: 200px;
-        justify-content: space-between;
-    }
-    
-    .imagenes div{
-        height: 200px;
-        width: 283px;
-    
-    }
-
-    /* <Nosotros> */
-        
-        .caja img{
-            display: none;
-        }
-        
-        .caja h2{
-            font-size: 12vw;
-        }
-        
-        .caja p{
-            font-size: 7vw;
-        }
-        
-        .caja2 img{
-            display: none;
-        }
-        
-        .caja2 h2{
-            font-size: 12vw;
-        }
-        
-        .caja2 p{
-            font-size: 7vw;
-        }
-
-        .caja3 h2{
-            font-size: 12vw;
-        }
-        
-        .caja3 p{
-            font-size: 7vw;
-        }
-
-
-
-}
-
-
-@media screen and (max-width:600px){
-
-    nav{
-        height: 350px;
-    }
-    
-    .lista {
-        padding-top: 10px;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-    
-    }
-    
-    .lista li{
-        list-style: none;
-    }
-    
-    .lista li a {
-        text-decoration: none;
-        color: white;
-        padding-left: 10px;
-        font-size: 30px;
-    }
-
-    .formulario {
-        flex-direction: column;
-        
-    }
-    
-    input {
-        width: 100%;
-        font-size: 10vw;
-    }
-    
-    textarea{
-        width: 100%;
-        font-size: 10vw;
-    }
-    
-    .boton{
-        font-size: 15vw;
-    }
-    
-}
-
-@media screen and (max-width:385px){
-
-    nav{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .lista li{
-        margin-top: 10px;
-    }
-    
-    .lista li a {
-        text-decoration: none;
-        color: white;
-        padding-left: 10px;
-    }
-
-    #cards{
-        display: none;
-    }
-
-    
-
-
-}
