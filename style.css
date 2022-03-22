@@ -52,7 +52,16 @@
 
 /* INICIO Imagenes */
 
+#demo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+}
+
 #pic{
+    width: 60%;
+    height: 60%;
 }
 
 #pic h3{
@@ -110,17 +119,27 @@
 /* ===============================================================================================================*/
 
 /* INICIO Servicios */
+.row{
+    display: flex;
+    align-items: center;
+}
 
 .row h2{
     font-size: 3vw;
 }
 
 .row p{
-    font-size: 1vw;
+    font-size: 1.5vw;
+}
+
+#img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #img h2{
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 #img p{
