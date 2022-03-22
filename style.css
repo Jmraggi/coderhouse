@@ -26,7 +26,7 @@
     margin: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight:bold;
-    color: rgb(177, 177, 177);
+    color: rgb(211, 211, 211);
     animation: jackInTheBox; 
     animation-duration: 2s; 
 }
@@ -35,19 +35,9 @@
     font-size: 2vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight:bold;
-    color: rgb(153, 153, 153);
+    color: rgb(211, 211, 211);
     animation: jackInTheBox; 
     animation-duration: 2s; 
-}
-
-.navbar-brand{
-    animation: heartBeat;
-    animation-duration: 3s
-}
-
-.nav-item{
-    animation: heartBeat;
-    animation-duration: 3s
 }
 
 #img{
