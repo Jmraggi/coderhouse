@@ -111,14 +111,26 @@
 
 /* INICIO Servicios */
 
+.row h2{
+    font-size: 3vw;
+}
+
+.row p{
+    font-size: 1vw;
+}
+
+#img h2{
+    font-size: 1vw;
+}
+
+#img p{
+    font-size: 1vw;
+}
 
 /* FIN Servicios */
 
 /* ===============================================================================================================*/
 
 /* INICIO Contacto */
-
-}
-
 
 
