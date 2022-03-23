@@ -1,0 +1,54 @@
+* {
+  margin: 0; }
+
+/* Variables */
+/* INICIO Index */
+#hero {
+  height: 100vh;
+  text-align: center;
+  padding: 25vh; }
+  #hero h2 {
+    font-size: 4.5vw;
+    display: flex;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #d3d3d3;
+    animation: jackInTheBox;
+    animation-duration: 2s; }
+  #hero h3 {
+    font-size: 2vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #ffffff;
+    animation: jackInTheBox;
+    animation-duration: 2s; }
+
+#img {
+  margin-left: 10px; }
+
+.piedepagina {
+  display: block;
+  font-size: 1.5vw;
+  text-align: center; }
+
+/* FIN Index */
+/* Inicio nosotros */
+#bienvenidos h2 {
+  font-size: 2vw;
+  display: flex;
+  font-family: "Segoe UI"; }
+
+#bienvenidos p {
+  font-size: 1.5vw;
+  display: flex;
+  font-family: serif; }
+
+#hacemos h2 {
+  font-size: 2vw;
+  display: flex;
+  font-family: "Segoe UI"; }
+
+#hacemos p {
+  font-size: 1.5vw;
+  display: flex;
+  font-family: serif; }
+
+/* FIN Nosotros */
