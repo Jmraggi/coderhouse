@@ -52,3 +52,15 @@
   font-family: serif; }
 
 /* FIN Nosotros */
+/* Inicio Fotos */
+#demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%; }
+
+#pic {
+  width: 60%;
+  height: 60%; }
+
+/* Fin Fotos */
