@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+}
+
+
+/* Variables */
+
+$size-titulosG: 4.5vw;
+$size-titulosM: 2vw;
+$size-titulosP: 1.5vw;
+$fuente: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$fuente-Segoe: "Segoe UI";
+$fuente-serif: serif;
+$color-gris: #d3d3d3;
+$color-blanco: #ffffff;
+
+
+/* INICIO Index */
+#hero{
+    height: 100vh;
+    text-align: center;
+    padding: 25vh;
+
+    h2{
+        font-size: $size-titulosG;
+        display: flex;
+        font-family: $fuente;
+        color: $color-gris;
+        animation: jackInTheBox; 
+        animation-duration: 2s; 
+    }
+    h3{
+        font-size: $size-titulosM;
+        font-family: $fuente;
+        color: $color-blanco;
+        animation: jackInTheBox; 
+        animation-duration: 2s; 
+        }
+
+    
+
+}
+
+
+#img{
+    margin-left: 10px;
+}
+
+.piedepagina{
+    display: block;
+    font-size: $size-titulosP;
+    text-align: center;
+}
+
+/* FIN Index */
+
+/* Inicio nosotros */
+#bienvenidos{
+    h2{
+        font-size: $size-titulosM;
+        display: flex;
+        font-family: $fuente-Segoe;
+    }
+    p{
+        font-size: $size-titulosP;
+        display: flex;
+        font-family: $fuente-serif;
+    }
+}
+
+#hacemos{
+    h2{
+        font-size: $size-titulosM;
+        display: flex;
+        font-family: $fuente-Segoe;
+    }
+    p{
+        font-size: $size-titulosP;
+        display: flex;
+        font-family: $fuente-serif;
+    }
+}
+
+/* FIN Nosotros */
