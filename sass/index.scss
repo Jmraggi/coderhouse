@@ -2,98 +2,161 @@
     margin: 0;
 }
 
+/* MAPS */
 
-/* Variables */
+$tamaños:(
+	tamañoG: 4.5vw,
+	tamañoM: 2vw,
+	tamañoP: 1vw,
+);
 
-$size-titulosG: 4.5vw;
-$size-titulosM: 2vw;
-$size-titulosP: 1.5vw;
-$fuente: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-$fuente-Segoe: "Segoe UI";
-$fuente-serif: serif;
-$color-gris: #d3d3d3;
-$color-blanco: #ffffff;
+$fuentes:(
+	fuente: Calibri,
+	fuente-Segoe: "Segoe UI",
+	fuente-serif: serif,
+);
 
+$color:(
+	color-negro: #000000,
+	color-gris: #3b3b3b,
+);
 
-/* INICIO Index */
-#hero{
-    height: 100vh;
+$display:(
+	block: block,
+	flex: flex,
+);
+@mixin hero {
+	height: 100vh;
     text-align: center;
     padding: 25vh;
-
-    h2{
-        font-size: $size-titulosG;
-        display: flex;
-        font-family: $fuente;
-        color: $color-gris;
-        animation: jackInTheBox; 
-        animation-duration: 2s; 
-    }
-    h3{
-        font-size: $size-titulosM;
-        font-family: $fuente;
-        color: $color-blanco;
-        animation: jackInTheBox; 
-        animation-duration: 2s; 
-        }
-
-    
-
 }
 
+@mixin animaciones{
+	animation: jackInTheBox; 
+	animation-duration: 2s; 
+}
+/* INICIO Index */
+#hero{
+	@include hero;
+
+    h2{
+		font-size: map-get($tamaños, tamañoG);
+		font-family: map-get($fuentes, fuente);
+		color: map-get($color, color-negro);
+		@include animaciones;
+    }
+    h3{
+		font-size: map-get($tamaños, tamañoM);
+		font-family: map-get($fuentes, fuente);
+		color: map-get($color, color-negro);
+		@include animaciones;
+        }
+}
 
 #img{
     margin-left: 10px;
 }
 
 .piedepagina{
-    display: block;
-    font-size: $size-titulosP;
+	font-size: map-get($tamaños, tamañoP);
+	display: map-get($display, block);
     text-align: center;
 }
-
-/* FIN Index */
 
 /* Inicio nosotros */
 #bienvenidos{
     h2{
-        font-size: $size-titulosM;
-        display: flex;
-        font-family: $fuente-Segoe;
+		font-size: map-get($tamaños, tamañoG);
+		font-family: map-get($fuentes, fuente-Segoe);
+		display: map-get($display,flex);
     }
     p{
-        font-size: $size-titulosP;
-        display: flex;
-        font-family: $fuente-serif;
+		font-size: map-get($tamaños, tamañoM);
+		font-family: map-get($fuentes, fuente-serif);
+		display: map-get($display, flex);
     }
 }
 
 #hacemos{
     h2{
-        font-size: $size-titulosM;
-        display: flex;
-        font-family: $fuente-Segoe;
+		font-size: map-get($tamaños, tamañoG);
+		font-family: map-get($fuentes, fuente-Segoe);
+		display: map-get($display, flex);
     }
     p{
-        font-size: $size-titulosP;
-        display: flex;
-        font-family: $fuente-serif;
+		font-size: map-get($tamaños, tamañoM);
+		font-family: map-get($fuentes, fuente-serif);
+		display: map-get($display, flex);
     }
 }
 
-/* FIN Nosotros */
-
-/* Inicio Fotos */
-#demo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5%;
+/* Inicio Provincias */
+#fondo {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-#pic{
-    width: 60%;
-    height: 60%;
+.img2 {
+	height: 150px;
+	width: 100%;
 }
 
-/* Fin Fotos */
+div {
+	[class^="col-"] {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+.card {
+	transition: 0.5s;
+	cursor: pointer;
+	&:hover {
+		transform: scale(1.05);
+		box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+	}
+	&::before {
+		transform-origin: left top;
+	}
+	&::after {
+		transform-origin: right bottom;
+	}
+}
+
+.card-title {
+	font-size: 15px;
+	transition: 1s;
+	cursor: pointer;
+	i {
+		font-size: 15px;
+		transition: 1s;
+		cursor: pointer;
+		color: #0004ff;
+		&:hover {
+			transform: scale(1.25) rotate(100deg);
+			color: #18d4ca;
+		}
+	}
+}
+
+.card-text {
+	height: 80px;
+}
+
+.card::before, .card::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transform: scale3d(0, 0, 1);
+	transition: transform .3s ease-out 0s;
+	background: rgba(255, 255, 255, 0.1);
+	content: '';
+	pointer-events: none;
+}
+
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+	transform: scale3d(1, 1, 1);
+}

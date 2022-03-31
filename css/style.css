@@ -1,7 +1,7 @@
 * {
   margin: 0; }
 
-/* Variables */
+/* MAPS */
 /* INICIO Index */
 #hero {
   height: 100vh;
@@ -9,15 +9,14 @@
   padding: 25vh; }
   #hero h2 {
     font-size: 4.5vw;
-    display: flex;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    color: #d3d3d3;
+    font-family: Calibri;
+    color: #000000;
     animation: jackInTheBox;
     animation-duration: 2s; }
   #hero h3 {
     font-size: 2vw;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    color: #ffffff;
+    font-family: Calibri;
+    color: #000000;
     animation: jackInTheBox;
     animation-duration: 2s; }
 
@@ -25,42 +24,83 @@
   margin-left: 10px; }
 
 .piedepagina {
+  font-size: 1vw;
   display: block;
-  font-size: 1.5vw;
   text-align: center; }
 
-/* FIN Index */
 /* Inicio nosotros */
 #bienvenidos h2 {
-  font-size: 2vw;
-  display: flex;
-  font-family: "Segoe UI"; }
+  font-size: 4.5vw;
+  font-family: "Segoe UI";
+  display: flex; }
 
 #bienvenidos p {
-  font-size: 1.5vw;
-  display: flex;
-  font-family: serif; }
+  font-size: 2vw;
+  font-family: serif;
+  display: flex; }
 
 #hacemos h2 {
-  font-size: 2vw;
-  display: flex;
-  font-family: "Segoe UI"; }
+  font-size: 4.5vw;
+  font-family: "Segoe UI";
+  display: flex; }
 
 #hacemos p {
-  font-size: 1.5vw;
-  display: flex;
-  font-family: serif; }
+  font-size: 2vw;
+  font-family: serif;
+  display: flex; }
 
-/* FIN Nosotros */
-/* Inicio Fotos */
-#demo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 5%; }
+/* Inicio Provincias */
+#fondo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-#pic {
-  width: 60%;
-  height: 60%; }
+.img2 {
+  height: 150px;
+  width: 100%; }
 
-/* Fin Fotos */
+div [class^="col-"] {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.card {
+  transition: 0.5s;
+  cursor: pointer; }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); }
+  .card::before {
+    transform-origin: left top; }
+  .card::after {
+    transform-origin: right bottom; }
+
+.card-title {
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer; }
+  .card-title i {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+    color: #0004ff; }
+    .card-title i:hover {
+      transform: scale(1.25) rotate(100deg);
+      color: #18d4ca; }
+
+.card-text {
+  height: 80px; }
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none; }
+
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1); }
