@@ -1,13 +1,28 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
+
+
+
 *{
     margin: 0;
 }
 
+
+
 /* MAPS */
 
+
 $tamaños:(
+	titulo: 100px,
+	subtitulo: 70px,
+	titulo_tablet: 50px,
+	subtitulo_tablet: 30px,
+	titulo_celuar: 45px,
+	subtitulo_celular: 20px,
 	tamañoG: 4.5vw,
-	tamañoM: 2vw,
-	tamañoP: 1vw,
+	tamañoM: 3vw,
+	tamañoP: 1.5vw,
 );
 
 $fuentes:(
@@ -17,7 +32,7 @@ $fuentes:(
 );
 
 $color:(
-	color-negro: #000000,
+	color-negro: #ffffff,
 	color-gris: #3b3b3b,
 );
 
@@ -28,7 +43,7 @@ $display:(
 @mixin hero {
 	height: 100vh;
     text-align: center;
-    padding: 25vh;
+	background: linear-gradient(0deg, #0d0f11, #0400ff4d), url(../imagenes/imagenes1.jpg);
 }
 
 @mixin animaciones{
@@ -36,19 +51,27 @@ $display:(
 	animation-duration: 2s; 
 }
 /* INICIO Index */
+.opaco{
+	background: rgba(34,34,34,0.75);
+}
+
 #hero{
 	@include hero;
 
+
     h2{
+		text-align: center;
 		font-size: map-get($tamaños, tamañoG);
 		font-family: map-get($fuentes, fuente);
 		color: map-get($color, color-negro);
+		margin-top: 150px;
 		@include animaciones;
     }
     h3{
 		font-size: map-get($tamaños, tamañoM);
 		font-family: map-get($fuentes, fuente);
 		color: map-get($color, color-negro);
+		margin-top: 50px;
 		@include animaciones;
         }
 }
@@ -64,6 +87,7 @@ $display:(
 }
 
 /* Inicio nosotros */
+
 #bienvenidos{
     h2{
 		font-size: map-get($tamaños, tamañoG);
@@ -71,7 +95,7 @@ $display:(
 		display: map-get($display,flex);
     }
     p{
-		font-size: map-get($tamaños, tamañoM);
+		font-size: map-get($tamaños, tamañoP);
 		font-family: map-get($fuentes, fuente-serif);
 		display: map-get($display, flex);
     }
@@ -84,12 +108,108 @@ $display:(
 		display: map-get($display, flex);
     }
     p{
-		font-size: map-get($tamaños, tamañoM);
+		font-size: map-get($tamaños, tamañoP);
 		font-family: map-get($fuentes, fuente-serif);
 		display: map-get($display, flex);
     }
 }
 
+/* CARTA */
+.profile-card-3 {
+	font-family: 'Open Sans', Arial, sans-serif;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+	height: 368px;
+	border: none;
+	.background-block {
+		float: left;
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+		.background {
+			width: 100%;
+			vertical-align: top;
+			opacity: 0.9;
+			-webkit-filter: blur(0.5px);
+			filter: blur(0.5px);
+			-webkit-transform: scale(1.8);
+			transform: scale(2.8);
+		}
+	}
+	.card-content {
+		width: 100%;
+		padding: 15px 25px;
+		color: #232323;
+		float: left;
+		background: #efefef;
+		height: 50%;
+		border-radius: 0 0 5px 5px;
+		position: relative;
+		z-index: 9999;
+		&::before {
+			content: '';
+			background: #efefef;
+			width: 120%;
+			height: 100%;
+			left: 11px;
+			bottom: 51px;
+			position: absolute;
+			z-index: -1;
+			transform: rotate(-13deg);
+		}
+	}
+	.profile {
+		border-radius: 50%;
+		position: absolute;
+		bottom: 50%;
+		left: 50%;
+		max-width: 100px;
+		opacity: 1;
+		box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+		border: 2px solid rgba(255, 255, 255, 1);
+		-webkit-transform: translate(-50%, 0%);
+		transform: translate(-50%, 0%);
+		z-index: 99999;
+	}
+	h2 {
+		margin: 0 0 5px;
+		font-weight: 600;
+		font-size: 25px;
+		small {
+			display: block;
+			font-size: 15px;
+			margin-top: 10px;
+		}
+	}
+	i {
+		display: inline-block;
+		font-size: 16px;
+		color: #232323;
+		text-align: center;
+		border: 1px solid #232323;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		border-radius: 50%;
+		margin: 0 5px;
+		&:hover {
+			background-color: #232323;
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	.icon-block {
+		float: left;
+		width: 100%;
+		margin-top: 15px;
+		a {
+			text-decoration: none;
+		}
+	}
+}
 /* Inicio Provincias */
 #fondo {
 	background-position: center;
@@ -159,4 +279,134 @@ div {
 
 .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
 	transform: scale3d(1, 1, 1);
+}
+
+
+/* Inicio Servicios */
+
+#servicios{
+    h2{
+		font-size: map-get($tamaños, tamañoG);
+		font-family: map-get($fuentes, fuente-Segoe);
+		display: map-get($display,flex);
+    }
+    p{
+		font-size: map-get($tamaños, tamañoP);
+		font-family: map-get($fuentes, fuente-serif);
+		display: map-get($display, flex);
+    }
+}
+.card-custom {
+	overflow: hidden;
+	min-height: 450px;
+	box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+}
+.card-custom-img {
+	height: 200px;
+	min-height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-color: inherit;
+	&::after {
+		position: absolute;
+		content: '';
+		top: 161px;
+		left: 0;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-top-width: 40px;
+		border-right-width: 0;
+		border-bottom-width: 0;
+		border-left-width: 545px;
+		border-left-width: calc(575px - 5vw);
+		border-top-color: transparent;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		border-left-color: inherit;
+	}
+}
+.card-custom-avatar {
+	img {
+		border-radius: 50%;
+		box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+		position: absolute;
+		top: 100px;
+		left: 1.25rem;
+		width: 100px;
+		height: 100px;
+	}
+}
+
+/* MEDIA QUERIS */
+
+@media screen and (max-width: 1024px){
+
+	#hero{
+		@include hero;
+	
+		h2{
+			text-align: center;
+			font-size: map-get($tamaños, titulo_tablet);
+		}
+		h3{
+			font-size: map-get($tamaños, subtitulo_tablet);
+			}
+	}
+	
+	#bienvenidos{	
+		h2{
+			font-size: map-get($tamaños, titulo_celular);
+		}
+		p{
+			font-size: map-get($tamaños, subtitulo_celular);
+			}
+	}
+
+	#hacemos{	
+		h2{
+			font-size: map-get($tamaños, titulo_celular);
+		}
+		p{
+			font-size: map-get($tamaños, subtitulo_celular);
+			}
+	}
+
+	.piedepagina{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 348px){
+
+	#hero{
+		@include hero;
+	
+		h2{
+			text-align: center;
+			font-size: map-get($tamaños, titulo_celular);
+		}
+		h3{
+			font-size: map-get($tamaños, subtitulo_celular);
+			}
+	}
+	
+	#bienvenidos{	
+		h2{
+			font-size: map-get($tamaños, titulo_celular);
+		}
+		p{
+			font-size: map-get($tamaños, subtitulo_celular);
+			}
+	}
+
+	#hacemos{	
+		h2{
+			font-size: map-get($tamaños, titulo_celular);
+		}
+		p{
+			font-size: map-get($tamaños, subtitulo_celular);
+			}
+	}
 }

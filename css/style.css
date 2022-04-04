@@ -1,22 +1,31 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700");
 * {
   margin: 0; }
 
 /* MAPS */
 /* INICIO Index */
+.opaco {
+  background: rgba(34, 34, 34, 0.75); }
+
 #hero {
   height: 100vh;
   text-align: center;
-  padding: 25vh; }
+  background: linear-gradient(0deg, #0d0f11, #0400ff4d), url(../imagenes/imagenes1.jpg); }
   #hero h2 {
+    text-align: center;
     font-size: 4.5vw;
     font-family: Calibri;
-    color: #000000;
+    color: #ffffff;
+    margin-top: 150px;
     animation: jackInTheBox;
     animation-duration: 2s; }
   #hero h3 {
-    font-size: 2vw;
+    font-size: 3vw;
     font-family: Calibri;
-    color: #000000;
+    color: #ffffff;
+    margin-top: 50px;
     animation: jackInTheBox;
     animation-duration: 2s; }
 
@@ -24,7 +33,7 @@
   margin-left: 10px; }
 
 .piedepagina {
-  font-size: 1vw;
+  font-size: 1.5vw;
   display: block;
   text-align: center; }
 
@@ -35,7 +44,7 @@
   display: flex; }
 
 #bienvenidos p {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: serif;
   display: flex; }
 
@@ -45,9 +54,94 @@
   display: flex; }
 
 #hacemos p {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: serif;
   display: flex; }
+
+/* CARTA */
+.profile-card-3 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  height: 368px;
+  border: none; }
+  .profile-card-3 .background-block {
+    float: left;
+    width: 100%;
+    height: 200px;
+    overflow: hidden; }
+    .profile-card-3 .background-block .background {
+      width: 100%;
+      vertical-align: top;
+      opacity: 0.9;
+      -webkit-filter: blur(0.5px);
+      filter: blur(0.5px);
+      -webkit-transform: scale(1.8);
+      transform: scale(2.8); }
+  .profile-card-3 .card-content {
+    width: 100%;
+    padding: 15px 25px;
+    color: #232323;
+    float: left;
+    background: #efefef;
+    height: 50%;
+    border-radius: 0 0 5px 5px;
+    position: relative;
+    z-index: 9999; }
+    .profile-card-3 .card-content::before {
+      content: '';
+      background: #efefef;
+      width: 120%;
+      height: 100%;
+      left: 11px;
+      bottom: 51px;
+      position: absolute;
+      z-index: -1;
+      transform: rotate(-13deg); }
+  .profile-card-3 .profile {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    max-width: 100px;
+    opacity: 1;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    z-index: 99999; }
+  .profile-card-3 h2 {
+    margin: 0 0 5px;
+    font-weight: 600;
+    font-size: 25px; }
+    .profile-card-3 h2 small {
+      display: block;
+      font-size: 15px;
+      margin-top: 10px; }
+  .profile-card-3 i {
+    display: inline-block;
+    font-size: 16px;
+    color: #232323;
+    text-align: center;
+    border: 1px solid #232323;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    margin: 0 5px; }
+    .profile-card-3 i:hover {
+      background-color: #232323;
+      color: #fff;
+      text-decoration: none; }
+  .profile-card-3 .icon-block {
+    float: left;
+    width: 100%;
+    margin-top: 15px; }
+    .profile-card-3 .icon-block a {
+      text-decoration: none; }
 
 /* Inicio Provincias */
 #fondo {
@@ -104,3 +198,85 @@ div [class^="col-"] {
 
 .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
   transform: scale3d(1, 1, 1); }
+
+/* Inicio Servicios */
+#servicios h2 {
+  font-size: 4.5vw;
+  font-family: "Segoe UI";
+  display: flex; }
+
+#servicios p {
+  font-size: 1.5vw;
+  font-family: serif;
+  display: flex; }
+
+.card-custom {
+  overflow: hidden;
+  min-height: 450px;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3); }
+
+.card-custom-img {
+  height: 200px;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-color: inherit; }
+  .card-custom-img::after {
+    position: absolute;
+    content: '';
+    top: 161px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top-width: 40px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 545px;
+    border-left-width: calc(575px - 5vw);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: inherit; }
+
+.card-custom-avatar img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+  position: absolute;
+  top: 100px;
+  left: 1.25rem;
+  width: 100px;
+  height: 100px; }
+
+/* MEDIA QUERIS */
+@media screen and (max-width: 1024px) {
+  #hero {
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(0deg, #0d0f11, #0400ff4d), url(../imagenes/imagenes1.jpg); }
+    #hero h2 {
+      text-align: center;
+      font-size: 50px; }
+    #hero h3 {
+      font-size: 30px; }
+  #bienvenidos p {
+    font-size: 20px; }
+  #hacemos p {
+    font-size: 20px; }
+  .piedepagina {
+    font-size: 15px; } }
+
+@media screen and (max-width: 348px) {
+  #hero {
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(0deg, #0d0f11, #0400ff4d), url(../imagenes/imagenes1.jpg); }
+    #hero h2 {
+      text-align: center; }
+    #hero h3 {
+      font-size: 20px; }
+  #bienvenidos p {
+    font-size: 20px; }
+  #hacemos p {
+    font-size: 20px; } }
