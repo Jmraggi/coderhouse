@@ -6,16 +6,13 @@
 
 /* MAPS */
 /* INICIO Index */
-.opaco {
-  background: rgba(34, 34, 34, 0.75); }
-
 #hero {
   height: 100vh;
   text-align: center;
   background: linear-gradient(0deg, #0d0f11, #0400ff4d), url(../imagenes/imagenes1.jpg); }
   #hero h2 {
     text-align: center;
-    font-size: 4.5vw;
+    font-size: 50px;
     font-family: Calibri;
     color: #ffffff;
     margin-top: 150px;
@@ -33,30 +30,22 @@
   margin-left: 10px; }
 
 .piedepagina {
-  font-size: 1.5vw;
+  font-size: 20px;
   display: block;
   text-align: center; }
 
 /* Inicio nosotros */
-#bienvenidos h2 {
-  font-size: 4.5vw;
+.card-body h2 {
+  font-size: 50px;
   font-family: "Segoe UI";
   display: flex; }
 
-#bienvenidos p {
-  font-size: 1.5vw;
-  font-family: serif;
+.card-body p {
+  font-family: Calibri;
   display: flex; }
 
-#hacemos h2 {
-  font-size: 4.5vw;
-  font-family: "Segoe UI";
-  display: flex; }
-
-#hacemos p {
-  font-size: 1.5vw;
-  font-family: serif;
-  display: flex; }
+#txt {
+  font-size: 20px; }
 
 /* CARTA */
 .profile-card-3 {
@@ -201,12 +190,16 @@ div [class^="col-"] {
 
 /* Inicio Servicios */
 #servicios h2 {
-  font-size: 4.5vw;
+  font-size: 50px;
   font-family: "Segoe UI";
-  display: flex; }
+  display: flex;
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center; }
 
 #servicios p {
-  font-size: 1.5vw;
+  font-size: 30px;
   font-family: serif;
   display: flex; }
 

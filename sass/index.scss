@@ -20,9 +20,9 @@ $tamaños:(
 	subtitulo_tablet: 30px,
 	titulo_celuar: 45px,
 	subtitulo_celular: 20px,
-	tamañoG: 4.5vw,
+	tamañoG: 50px,
 	tamañoM: 3vw,
-	tamañoP: 1.5vw,
+	tamañoP: 20px,
 );
 
 $fuentes:(
@@ -30,6 +30,13 @@ $fuentes:(
 	fuente-Segoe: "Segoe UI",
 	fuente-serif: serif,
 );
+
+@mixin centro{
+	align-items: center;
+	display: flex;
+	height: 100px;
+	justify-content: center;
+}
 
 $color:(
 	color-negro: #ffffff,
@@ -51,9 +58,7 @@ $display:(
 	animation-duration: 2s; 
 }
 /* INICIO Index */
-.opaco{
-	background: rgba(34,34,34,0.75);
-}
+
 
 #hero{
 	@include hero;
@@ -88,30 +93,9 @@ $display:(
 
 /* Inicio nosotros */
 
-#bienvenidos{
-    h2{
-		font-size: map-get($tamaños, tamañoG);
-		font-family: map-get($fuentes, fuente-Segoe);
-		display: map-get($display,flex);
-    }
-    p{
-		font-size: map-get($tamaños, tamañoP);
-		font-family: map-get($fuentes, fuente-serif);
-		display: map-get($display, flex);
-    }
-}
 
-#hacemos{
-    h2{
-		font-size: map-get($tamaños, tamañoG);
-		font-family: map-get($fuentes, fuente-Segoe);
-		display: map-get($display, flex);
-    }
-    p{
-		font-size: map-get($tamaños, tamañoP);
-		font-family: map-get($fuentes, fuente-serif);
-		display: map-get($display, flex);
-    }
+#txt {
+	font-size: 20px;
 }
 
 /* CARTA */
@@ -210,7 +194,21 @@ $display:(
 		}
 	}
 }
+
+.card-body{
+    h2{
+		font-size: map-get($tamaños, tamañoG);
+		font-family: map-get($fuentes, fuente-Segoe);
+		display: map-get($display,flex);
+    }
+    p{
+		font-family: map-get($fuentes, fuente);
+		display: map-get($display, flex);
+    }
+}
+
 /* Inicio Provincias */
+
 #fondo {
 	background-position: center;
 	background-repeat: no-repeat;
@@ -286,12 +284,13 @@ div {
 
 #servicios{
     h2{
-		font-size: map-get($tamaños, tamañoG);
+		font-size: map-get($tamaños, titulo_tablet);
 		font-family: map-get($fuentes, fuente-Segoe);
 		display: map-get($display,flex);
+		@include centro;
     }
     p{
-		font-size: map-get($tamaños, tamañoP);
+		font-size: map-get($tamaños, subtitulo_tablet);
 		font-family: map-get($fuentes, fuente-serif);
 		display: map-get($display, flex);
     }
