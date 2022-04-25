@@ -35,15 +35,6 @@
   text-align: center; }
 
 /* Inicio nosotros */
-.card-body h2 {
-  font-size: 50px;
-  font-family: "Segoe UI";
-  display: flex; }
-
-.card-body p {
-  font-family: Calibri;
-  display: flex; }
-
 #txt {
   font-size: 20px; }
 
@@ -132,6 +123,15 @@
     .profile-card-3 .icon-block a {
       text-decoration: none; }
 
+.card-body h2 {
+  font-size: 50px;
+  font-family: "Segoe UI";
+  display: flex; }
+
+.card-body p {
+  font-family: Calibri;
+  display: flex; }
+
 /* Inicio Provincias */
 #fondo {
   background-position: center;
@@ -141,10 +141,6 @@
 .img2 {
   height: 150px;
   width: 100%; }
-
-div [class^="col-"] {
-  padding-left: 5px;
-  padding-right: 5px; }
 
 .card {
   transition: 0.5s;
@@ -170,9 +166,6 @@ div [class^="col-"] {
       transform: scale(1.25) rotate(100deg);
       color: #18d4ca; }
 
-.card-text {
-  height: 80px; }
-
 .card::before, .card::after {
   position: absolute;
   top: 0;
@@ -187,6 +180,10 @@ div [class^="col-"] {
 
 .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
   transform: scale3d(1, 1, 1); }
+
+#logoProv {
+  max-width: 15%;
+  max-height: 15%; }
 
 /* Inicio Servicios */
 #servicios h2 {
@@ -242,6 +239,21 @@ div [class^="col-"] {
   width: 100px;
   height: 100px; }
 
+/* Mapa */
+iframe {
+  max-width: 100%;
+  height: 50vh; }
+
+/* Formulario */
+.header {
+  color: #36A0FF;
+  font-size: 27px;
+  padding: 10px; }
+
+.bigicon {
+  font-size: 35px;
+  color: #36A0FF; }
+
 /* MEDIA QUERIS */
 @media screen and (max-width: 1024px) {
   #hero {
@@ -272,4 +284,6 @@ div [class^="col-"] {
   #bienvenidos p {
     font-size: 20px; }
   #hacemos p {
+    font-size: 20px; }
+  .servicios p {
     font-size: 20px; } }

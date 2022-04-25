@@ -220,12 +220,7 @@ $display:(
 	width: 100%;
 }
 
-div {
-	[class^="col-"] {
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-}
+
 
 .card {
 	transition: 0.5s;
@@ -258,10 +253,6 @@ div {
 	}
 }
 
-.card-text {
-	height: 80px;
-}
-
 .card::before, .card::after {
 	position: absolute;
 	top: 0;
@@ -279,6 +270,10 @@ div {
 	transform: scale3d(1, 1, 1);
 }
 
+#logoProv{
+	max-width:15%;
+	max-height:15%;
+}
 
 /* Inicio Servicios */
 
@@ -336,6 +331,25 @@ div {
 		width: 100px;
 		height: 100px;
 	}
+}
+
+/* Mapa */
+iframe {
+	max-width: 100%;
+	height: 50vh;
+   }
+
+/* Formulario */
+
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
 }
 
 /* MEDIA QUERIS */
@@ -401,6 +415,15 @@ div {
 	}
 
 	#hacemos{	
+		h2{
+			font-size: map-get($tamaños, titulo_celular);
+		}
+		p{
+			font-size: map-get($tamaños, subtitulo_celular);
+			}
+	}
+
+	.servicios{	
 		h2{
 			font-size: map-get($tamaños, titulo_celular);
 		}
